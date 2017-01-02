@@ -1,0 +1,12 @@
+cat
+dog
+giraffe
+moose
+snake
+turtle
+lion
+tiger
+bear
+penny
+peanut
+vikingcat
