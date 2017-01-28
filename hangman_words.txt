@@ -10,3 +10,4 @@ bear
 penny
 peanut
 vikingcat
+cantaloupe
