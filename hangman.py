@@ -1,6 +1,6 @@
 import random
 
-words_file = 'hangman_words.txt'
+words_file = "/Python/hello-world/hangman_words.txt"
 
 try:
     f = open(words_file)

@@ -1,10 +1,12 @@
 #temp_framework.py
 
 from tkinter import *
+from converters import *
 
 class App:
 
     def __init__(self, master):
+        self.t_conv = ScaleAndOffsetConverter('C', 'F', 1.8, 32)
         frame = Frame(master)
         frame.pack()
         Label(frame, text='deg C').grid(row=0, column=0)
@@ -17,7 +19,8 @@ class App:
         button.grid(row=2, columnspan=2)
 
     def convert(self):
-        print ('Not implemented')
+        c = self.c_var.get()
+        self.result_var.set(self.t_conv.convert(c))
 
 root = Tk()
 root.wm_title('Temp Converter')
